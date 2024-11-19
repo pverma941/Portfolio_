@@ -1,0 +1,301 @@
+<div>
+  <nav id="desktop-nav">
+    <div class="logo"><a>Munna Verma</a></div>
+    <div>
+      <ul class="nav-links">
+        <li><a class="cursor-pointer" (click)="onAction('about')">About</a></li>
+        <li><a class="cursor-pointer" (click)="onAction('experience')">Experience</a></li>
+        <li><a class="cursor-pointer" (click)="onAction('projects')" >Projects</a></li>
+        <li><a class="cursor-pointer" (click)="onAction('contact')">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">John Doe</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/MunnaVerma.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Munna Verma</h1>
+      <p class="section__text__p2">Full-Stack Developer</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./assets/CV.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" (click)="onAction('contact')">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          (click)="redirectToExternalPage('https://www.linkedin.com/in/verma-munna-works/')"
+        />
+        <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          (click)="redirectToExternalPage('https://github.com/munnaverma-inventyv')"
+        />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="./assets/MunnaPhoto.jpg"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>1+ years <br />Full-Stack Developer</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>B.Tech in Computer Science</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            As a skilled Software Developer, I specialize in creating dynamic, scalable, and efficient web applications. With a solid foundation in Angular, JavaScript, and Node.js, I design responsive front-end interfaces and build powerful back-end solutions using Express.js. I’m experienced in seamless API integrations, including the implementation of advanced ChatGPT capabilities, to deliver engaging, user-centered applications. My focus is on creating quality code that enhances user experiences and meets client objectives. Let’s bring your vision to life with technology that stands out!
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow cursor-pointer"
+      (click)="onAction('experience')"
+    />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Skills</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h2>Angular Js</h2>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h2>Node Js</h2>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h2>Express Js</h2>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h2>Rust</h2>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h2>MongoDB</h2>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Services</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h2>Full-Stack Web Development</h2>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h2>E-commerce Web Development</h2>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h2>API Integrations</h2>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h2>AI Integrations</h2>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow cursor-pointer"
+      (click)="onAction('projects')"
+    />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Project</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img
+              src="./assets/ecommerce-Website-Project.jpg"
+              alt="Project 1"
+              class="project-img"
+            />
+          </div>
+          <h2 class="experience-sub-title project-title">E-Commerce Book Store</h2>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              (click)="redirectToExternalPage('https://github.com/pverma941/E-Commerce-Book-Store-Using-MERN-Stack')"
+            >
+              Github
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              (click)="redirectToExternalPage('https://bookstore-nbbl.onrender.com/')"
+            >
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow cursor-pointer"
+      (click)="onAction('contact')"
+    />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img
+          src="./assets/email.png"
+          alt="Email icon"
+          class="icon contact-icon email-icon"
+        />
+        <p><a href="mailto:munnaverma8780@gmail.com">{{email}}</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn icon"
+          class="icon contact-icon"
+        />
+        <p><a (click)="redirectToExternalPage('https://www.linkedin.com/in/verma-munna-works/')">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a class="cursor-pointer" (click)="onAction('about')">About</a></li>
+          <li><a class="cursor-pointer" (click)="onAction('experience')">Experience</a></li>
+          <li><a class="cursor-pointer" (click)="onAction('projects')" >Projects</a></li>
+          <li><a class="cursor-pointer" (click)="onAction('contact')">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Munna Verma. All Rights Reserved.</p>
+  </footer>
+</div>
